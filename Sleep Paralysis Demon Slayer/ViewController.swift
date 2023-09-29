@@ -34,6 +34,145 @@ var logtext:String = ""
 
 class ViewController: UIViewController {
 
+    let userDefaults = UserDefaults.standard
+    
+    let hum_KEY = "humKey"
+    let sigh_KEY = "sighKey"
+    let babble_KEY = "babbleKey"
+    let gargle_KEY = "gargleKey"
+    let cry_KEY = "cryKey"
+    let scream_KEY = "screamKey"
+    let moo_KEY = "mooKey"
+    let whale_KEY = "whaleKey"
+    let dog_KEY = "dogKey"
+    let lion_KEY = "lionKey"
+    let growl_KEY = "growlKey"
+    
+    func checkSwitchState()
+    {
+        if(userDefaults.bool(forKey: hum_KEY))
+        {
+            humSwitch.setOn(true, animated: false)
+            hum = true
+        }
+        else
+        {
+            humSwitch.setOn(false, animated: false)
+            hum = false
+        }
+        
+        if(userDefaults.bool(forKey: sigh_KEY))
+        {
+            sighSwitch.setOn(true, animated: false)
+            sigh = true
+        }
+        else
+        {
+            sighSwitch.setOn(false, animated: false)
+            sigh = false
+        }
+        
+        if(userDefaults.bool(forKey: babble_KEY))
+        {
+            babbleSwitch.setOn(true, animated: false)
+            babble = true
+        }
+        else
+        {
+            babbleSwitch.setOn(false, animated: false)
+            babble = false
+        }
+        
+        if(userDefaults.bool(forKey: gargle_KEY))
+        {
+            gargleSwitch.setOn(true, animated: false)
+            gargle = true
+        }
+        else
+        {
+            gargleSwitch.setOn(false, animated: false)
+            gargle = false
+        }
+        
+        if(userDefaults.bool(forKey: cry_KEY))
+        {
+            crySwitch.setOn(true, animated: false)
+            cry = true
+        }
+        else
+        {
+            crySwitch.setOn(false, animated: false)
+            cry = false
+        }
+        
+        if(userDefaults.bool(forKey: scream_KEY))
+        {
+            screamSwitch.setOn(true, animated: false)
+            scream = true
+        }
+        else
+        {
+            screamSwitch.setOn(false, animated: false)
+            scream = false
+        }
+        
+        if(userDefaults.bool(forKey: moo_KEY))
+        {
+            mooSwitch.setOn(true, animated: false)
+            moo = true
+        }
+        else
+        {
+            mooSwitch.setOn(false, animated: false)
+            moo = false
+        }
+        
+        if(userDefaults.bool(forKey: whale_KEY))
+        {
+            whaleSwitch.setOn(true, animated: false)
+            whale = true
+        }
+        else
+        {
+            whaleSwitch.setOn(false, animated: false)
+            whale = false
+        }
+        
+        if(userDefaults.bool(forKey: dog_KEY))
+        {
+            dogSwitch.setOn(true, animated: false)
+            dog = true
+        }
+        else
+        {
+            dogSwitch.setOn(false, animated: false)
+            dog = false
+        }
+        
+        if(userDefaults.bool(forKey: growl_KEY))
+        {
+            growlSwitch.setOn(true, animated: false)
+            growl = true
+        }
+        else
+        {
+            growlSwitch.setOn(false, animated: false)
+            growl = false
+        }
+        
+        if(userDefaults.bool(forKey: lion_KEY))
+        {
+            lionSwitch.setOn(true, animated: false)
+            lion = true
+        }
+        else
+        {
+            lionSwitch.setOn(false, animated: false)
+            lion = false
+        }
+        
+    }
+
     @IBOutlet weak var ThresholdLabel: UILabel!
     @IBOutlet weak var thresholdSlider: UISlider!
     @IBOutlet weak var StopAlarmButton: UIButton!
@@ -50,6 +189,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        checkSwitchState()
         
         startAudioEngine()
         // Create a new stream analyzer.
@@ -127,19 +267,22 @@ class ViewController: UIViewController {
     @IBAction func humChanged(_ sender: Any) {
         if (humSwitch.isOn) {
             hum = true
+            userDefaults.set(true, forKey: hum_KEY)
         }else{
+            userDefaults.set(false, forKey: hum_KEY)
             hum = false
         }
     }
     
     
     @IBOutlet weak var sighSwitch: UISwitch!
-    
     @IBAction func sighChanged(_ sender: Any) {
         if (sighSwitch.isOn) {
             sigh = true
+            userDefaults.set(true, forKey: sigh_KEY)
         }else{
             sigh = false
+            userDefaults.set(false, forKey: sigh_KEY)
         }
     }
     
@@ -148,13 +291,108 @@ class ViewController: UIViewController {
     @IBAction func babbleChanged(_ sender: Any) {
         if (babbleSwitch.isOn) {
             babble = true
+            userDefaults.set(true, forKey: babble_KEY)
         }else{
             babble = false
+            userDefaults.set(false, forKey: babble_KEY)
+        }
+    }
+    
+    @IBOutlet weak var gargleSwitch: UISwitch!
+    
+    @IBAction func gargleChanged(_ sender: Any) {
+        if (gargleSwitch.isOn) {
+            userDefaults.set(true, forKey: gargle_KEY)
+            gargle = true
+        }else{
+            gargle = false
+            userDefaults.set(false, forKey: gargle_KEY)
+        }
+    }
+    
+    @IBOutlet weak var crySwitch: UISwitch!
+    
+    @IBAction func cryChanged(_ sender: Any) {
+        if (crySwitch.isOn) {
+            cry = true
+            userDefaults.set(true, forKey: cry_KEY)
+        }else{
+            cry = false
+            userDefaults.set(false, forKey: cry_KEY)
+        }
+    }
+    
+    @IBOutlet weak var screamSwitch: UISwitch!
+    
+    @IBAction func screamChanged(_ sender: Any) {
+        if (screamSwitch.isOn) {
+            scream = true
+            userDefaults.set(true, forKey: scream_KEY)
+        }else{
+            scream = false
+            userDefaults.set(false, forKey: scream_KEY)
+        }
+    }
+    
+    @IBOutlet weak var mooSwitch: UISwitch!
+    @IBAction func mooChanged(_ sender: Any) {
+        if (mooSwitch.isOn) {
+            moo = true
+            userDefaults.set(true, forKey: moo_KEY)
+        }else{
+            moo = false
+            userDefaults.set(false, forKey: moo_KEY)
+        }
+    }
+    
+    @IBOutlet weak var whaleSwitch: UISwitch!
+    
+    @IBAction func whaleChanged(_ sender: Any) {
+        if (whaleSwitch.isOn) {
+            whale = true
+            userDefaults.set(true, forKey: whale_KEY)
+        }else{
+            whale = false
+            userDefaults.set(false, forKey: whale_KEY)
+        }
+    }
+    
+    @IBOutlet weak var dogSwitch: UISwitch!
+    @IBAction func dogChanged(_ sender: Any) {
+        if (dogSwitch.isOn) {
+            dog = true
+            userDefaults.set(true, forKey: dog_KEY)
+        }else{
+            dog = false
+            userDefaults.set(false, forKey: dog_KEY)
+        }
+    }
+    
+    
+    @IBOutlet weak var growlSwitch: UISwitch!
+    @IBAction func growlChanged(_ sender: Any) {
+        if (growlSwitch.isOn) {
+            growl = true
+            userDefaults.set(true, forKey: growl_KEY)
+        }else{
+            growl = false
+            userDefaults.set(false, forKey: growl_KEY)
+        }
+    }
+    
+    @IBOutlet weak var lionSwitch: UISwitch!
+    
+    @IBAction func lionChanged(_ sender: Any) {
+        if (lionSwitch.isOn) {
+            lion = true
+            userDefaults.set(true, forKey: lion_KEY)
+        }else{
+            lion = false
+            userDefaults.set(false, forKey: lion_KEY)
         }
     }
     
 }
-
 
 
 func playSound(){

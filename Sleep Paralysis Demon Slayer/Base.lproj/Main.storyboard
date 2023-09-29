@@ -40,9 +40,9 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qFA-QG-u3Q">
                                                         <rect key="frame" x="72.5" y="0.0" width="72.5" height="31"/>
                                                         <color key="onTintColor" systemColor="systemYellowColor"/>
-                                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
-                                                            <action selector="humChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Plw-if-YQs"/>
+                                                            <action selector="humChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Lo9-Ba-5XA"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sigh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWf-Am-Tn1">
@@ -54,7 +54,7 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-cG-33i">
                                                         <rect key="frame" x="217.5" y="0.0" width="72.5" height="31"/>
                                                         <color key="onTintColor" systemColor="systemYellowColor"/>
-                                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
                                                             <action selector="sighChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="sQY-xo-Se0"/>
                                                         </connections>
@@ -73,7 +73,7 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nod-nK-FB0">
                                                         <rect key="frame" x="72.5" y="0.0" width="72.5" height="31"/>
                                                         <color key="onTintColor" systemColor="systemYellowColor"/>
-                                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
                                                             <action selector="babbleChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="i4V-re-pPa"/>
                                                         </connections>
@@ -87,7 +87,10 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxS-zK-LsF">
                                                         <rect key="frame" x="217.5" y="0.0" width="72.5" height="31"/>
                                                         <color key="onTintColor" systemColor="systemYellowColor"/>
-                                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="gargleChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="D6p-pS-src"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -103,7 +106,10 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZX7-Ow-tHJ">
                                                         <rect key="frame" x="72.5" y="0.0" width="72.5" height="31"/>
                                                         <color key="onTintColor" systemColor="systemYellowColor"/>
-                                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="cryChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ukl-ky-ql8"/>
+                                                        </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxZ-Tf-Gdf">
                                                         <rect key="frame" x="145" y="0.0" width="70.5" height="31"/>
@@ -114,7 +120,10 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YqZ-8w-KuB">
                                                         <rect key="frame" x="217.5" y="0.0" width="72.5" height="31"/>
                                                         <color key="onTintColor" systemColor="systemYellowColor"/>
-                                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="screamChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="eeQ-59-tbC"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -130,7 +139,10 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJy-wg-3Z9">
                                                         <rect key="frame" x="72.5" y="0.0" width="72.5" height="31"/>
                                                         <color key="onTintColor" systemColor="systemYellowColor"/>
-                                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="mooChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="aW1-Ae-6Xx"/>
+                                                        </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="whale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOc-OG-Fot">
                                                         <rect key="frame" x="145" y="0.0" width="70.5" height="31"/>
@@ -141,7 +153,10 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2R-0P-i62">
                                                         <rect key="frame" x="217.5" y="0.0" width="72.5" height="31"/>
                                                         <color key="onTintColor" systemColor="systemYellowColor"/>
-                                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="whaleChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="WZo-Kp-4Dm"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -157,7 +172,10 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sd9-VP-ttR">
                                                         <rect key="frame" x="72.5" y="0.0" width="72.5" height="31"/>
                                                         <color key="onTintColor" systemColor="systemYellowColor"/>
-                                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="dogChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="zJs-Xq-faf"/>
+                                                        </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dog_growl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOx-FS-bwP">
                                                         <rect key="frame" x="145" y="0.0" width="70.5" height="31"/>
@@ -168,7 +186,10 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IJY-CW-vfD">
                                                         <rect key="frame" x="217.5" y="0.0" width="72.5" height="31"/>
                                                         <color key="onTintColor" systemColor="systemYellowColor"/>
-                                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="growlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="SiY-0K-K4w"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -184,7 +205,10 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sxk-O0-cOk">
                                                         <rect key="frame" x="72.5" y="0.0" width="72.5" height="31"/>
                                                         <color key="onTintColor" systemColor="systemYellowColor"/>
-                                                        <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="lionChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="EZv-8A-h8i"/>
+                                                        </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gi-jD-FSV">
                                                         <rect key="frame" x="145" y="0.0" width="70.5" height="31"/>
@@ -229,7 +253,7 @@
                                             <action selector="showLog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mP6-Eg-gjg"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No log yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYT-iG-xud">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No log yet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYT-iG-xud">
                                         <rect key="frame" x="0.0" y="417.5" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -260,10 +284,18 @@
                         <outlet property="StopAlarmButton" destination="ThH-44-wbg" id="Ur1-JB-bow"/>
                         <outlet property="ThresholdLabel" destination="hlL-qX-j2d" id="HFZ-ky-MHW"/>
                         <outlet property="babbleSwitch" destination="Nod-nK-FB0" id="ggw-fQ-sIb"/>
+                        <outlet property="crySwitch" destination="ZX7-Ow-tHJ" id="kGm-JK-qTC"/>
+                        <outlet property="dogSwitch" destination="sd9-VP-ttR" id="K2W-Xd-sG6"/>
+                        <outlet property="gargleSwitch" destination="mxS-zK-LsF" id="7dL-j1-dPZ"/>
+                        <outlet property="growlSwitch" destination="IJY-CW-vfD" id="Xnw-7W-jP7"/>
                         <outlet property="humSwitch" destination="qFA-QG-u3Q" id="OrM-ol-5Sx"/>
+                        <outlet property="lionSwitch" destination="sxk-O0-cOk" id="nuk-o9-sjp"/>
                         <outlet property="logText" destination="gYT-iG-xud" id="ugD-eL-VRN"/>
+                        <outlet property="mooSwitch" destination="gJy-wg-3Z9" id="ojA-Mm-U0Y"/>
+                        <outlet property="screamSwitch" destination="YqZ-8w-KuB" id="HEu-QE-1Yz"/>
                         <outlet property="sighSwitch" destination="4Wc-cG-33i" id="f9W-cI-fun"/>
                         <outlet property="thresholdSlider" destination="xJr-UE-lbe" id="llR-BZ-aCt"/>
+                        <outlet property="whaleSwitch" destination="i2R-0P-i62" id="TMT-BL-pJU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
