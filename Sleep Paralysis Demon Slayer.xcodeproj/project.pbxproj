@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A01713582AC536E600CA0D8E /* safe1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A01713572AC536E600CA0D8E /* safe1.m4a */; };
+		A017135C2AC54CE000CA0D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A017135B2AC54CE000CA0D8E /* Assets.xcassets */; };
 		A04ED6242AC1D688000F587E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04ED6232AC1D688000F587E /* AppDelegate.swift */; };
 		A04ED6262AC1D688000F587E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04ED6252AC1D688000F587E /* SceneDelegate.swift */; };
 		A04ED6282AC1D688000F587E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04ED6272AC1D688000F587E /* ViewController.swift */; };
 		A04ED62B2AC1D688000F587E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04ED6292AC1D688000F587E /* Main.storyboard */; };
-		A04ED62D2AC1D689000F587E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04ED62C2AC1D689000F587E /* Assets.xcassets */; };
 		A04ED6302AC1D689000F587E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04ED62E2AC1D689000F587E /* LaunchScreen.storyboard */; };
 		A04ED63B2AC1D68A000F587E /* Sleep_Paralysis_Demon_SlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04ED63A2AC1D68A000F587E /* Sleep_Paralysis_Demon_SlayerTests.swift */; };
 		A04ED6452AC1D68A000F587E /* Sleep_Paralysis_Demon_SlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04ED6442AC1D68A000F587E /* Sleep_Paralysis_Demon_SlayerUITests.swift */; };
@@ -36,12 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A01713572AC536E600CA0D8E /* safe1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = safe1.m4a; sourceTree = "<group>"; };
+		A017135B2AC54CE000CA0D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04ED6202AC1D688000F587E /* Sleep Paralysis Demon Slayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Paralysis Demon Slayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04ED6232AC1D688000F587E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04ED6252AC1D688000F587E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A04ED6272AC1D688000F587E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A04ED62A2AC1D688000F587E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A04ED62C2AC1D689000F587E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04ED62F2AC1D689000F587E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A04ED6312AC1D689000F587E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A04ED6362AC1D68A000F587E /* Sleep Paralysis Demon SlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sleep Paralysis Demon SlayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +105,8 @@
 				A04ED6252AC1D688000F587E /* SceneDelegate.swift */,
 				A04ED6272AC1D688000F587E /* ViewController.swift */,
 				A04ED6292AC1D688000F587E /* Main.storyboard */,
-				A04ED62C2AC1D689000F587E /* Assets.xcassets */,
+				A01713572AC536E600CA0D8E /* safe1.m4a */,
+				A017135B2AC54CE000CA0D8E /* Assets.xcassets */,
 				A04ED62E2AC1D689000F587E /* LaunchScreen.storyboard */,
 				A04ED6312AC1D689000F587E /* Info.plist */,
 			);
@@ -232,7 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04ED6302AC1D689000F587E /* LaunchScreen.storyboard in Resources */,
-				A04ED62D2AC1D689000F587E /* Assets.xcassets in Resources */,
+				A01713582AC536E600CA0D8E /* safe1.m4a in Resources */,
+				A017135C2AC54CE000CA0D8E /* Assets.xcassets in Resources */,
 				A04ED62B2AC1D688000F587E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = B952JCGGWP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sleep Paralysis Demon Slayer/Info.plist";
@@ -464,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = B952JCGGWP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sleep Paralysis Demon Slayer/Info.plist";
