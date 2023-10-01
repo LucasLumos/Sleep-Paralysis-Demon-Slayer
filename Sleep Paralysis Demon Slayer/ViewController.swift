@@ -16,7 +16,7 @@ import Combine
 let resultsObserver = ResultsObserver()
 
 var audioPlayer : AVAudioPlayer?
-var t:Double = 30
+var t:Float = 30
 
 var hum:Bool = true
 var sigh:Bool = true
@@ -35,7 +35,7 @@ var logtext:String = ""
 class ViewController: UIViewController {
 
     let userDefaults = UserDefaults.standard
-    
+
     let hum_KEY = "humKey"
     let sigh_KEY = "sighKey"
     let babble_KEY = "babbleKey"
@@ -47,9 +47,17 @@ class ViewController: UIViewController {
     let dog_KEY = "dogKey"
     let lion_KEY = "lionKey"
     let growl_KEY = "growlKey"
+    let threshold_KEY = "thresholdKey"
+    
+    
     
     func checkSwitchState()
     {
+
+        thresholdSlider.value = userDefaults.float(forKey: threshold_KEY)
+        t = Float(thresholdSlider.value.rounded())
+        ThresholdLabel.text = String(Int(t)) + " %"
+        
         if(userDefaults.bool(forKey: hum_KEY))
         {
             humSwitch.setOn(true, animated: false)
@@ -249,13 +257,30 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func infoButton(_ sender: Any) {
+        let alertController = UIAlertController(title: "How the app works", message: "The app will listen in the background for the selected sounds, and play music when the that sound is detected. You can set the sensitivity using the activiation threshold slider (higher is harder to detect). You can stop the sound by clicking the stop sound button at the bottom. The show log button shows what sounds have been detected thus far. The sounds available here are some sounds that could be potentially detected during sleep paralysis episodes. You can try having all the options on, and set a lower activation threshold to start, and turn off options that triggers false starts until you reach a satisfactory threshold and sound settings. The app will remember this setting even if you close the app and be set to it next time you open the app.", preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default) {
+            (action: UIAlertAction!) in
+            // Code in this block will trigger when OK button tapped.
+            
+        }
+        alertController.addAction(OKAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     @IBAction func stopMusic(_ sender: Any) {
         audioPlayer?.stop()
     }
     
     @IBAction func changedThreshold(_ sender: Any) {
-        t = Double(thresholdSlider.value.rounded())
+        t = Float(thresholdSlider.value.rounded())
         ThresholdLabel.text = String(Int(t)) + " %"
+
+    }
+    
+    
+    @IBAction func sliderDone(_ sender: Any) {
+        userDefaults.set(t, forKey: threshold_KEY)
     }
     
     @IBAction func showLog(_ sender: Any) {
@@ -457,7 +482,7 @@ class ResultsObserver: NSObject, SNResultsObserving {
 
 
         // Convert the confidence to a percentage string.
-        let percent = classification.confidence * 100.0
+        let percent = Float(classification.confidence * 100.0)
         let percentString = String(format: "%.2f%%", percent)
 
 

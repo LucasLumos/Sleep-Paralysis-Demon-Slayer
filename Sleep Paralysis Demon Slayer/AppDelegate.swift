@@ -15,6 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        UserDefaults.standard.register(defaults: [
+                "humKey": true,
+                "sighKey": true,
+                "babbleKey": true,
+                "gargleKey": true,
+                "cryKey": true,
+                "screamKey": true,
+                "mooKey": true,
+                "whaleKey": true,
+                "dogKey": true,
+                "lionKey": true,
+                "growlKey": true,
+                "thresholdKey": 25
+            ]
+        )
+        
         return true
     }
 

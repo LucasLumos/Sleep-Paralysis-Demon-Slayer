@@ -2,7 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,16 +22,30 @@
                                 <rect key="frame" x="16" y="50" width="288" height="488"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yIO-uf-9VO">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="234"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="250"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sounds app will listen for " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmm-h0-DNg">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="qJe-SS-5gN">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sounds app will listen for " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmm-h0-DNg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="229" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kun-za-87W">
+                                                        <rect key="frame" x="229" y="0.0" width="59" height="34"/>
+                                                        <color key="tintColor" name="AccentColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="info.circle" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="infoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fgm-Xi-cOD"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="qYC-en-7RQ">
-                                                <rect key="frame" x="0.0" y="23" width="288" height="31"/>
+                                                <rect key="frame" x="0.0" y="39" width="288" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pli-2j-LHx">
                                                         <rect key="frame" x="0.0" y="0.0" width="70.5" height="31"/>
@@ -62,7 +78,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="SKk-us-jEQ">
-                                                <rect key="frame" x="0.0" y="59" width="288" height="31"/>
+                                                <rect key="frame" x="0.0" y="75" width="288" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="babble" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zl0-cG-KGS">
                                                         <rect key="frame" x="0.0" y="0.0" width="70.5" height="31"/>
@@ -95,7 +111,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="550-oB-CSu">
-                                                <rect key="frame" x="0.0" y="95" width="288" height="31"/>
+                                                <rect key="frame" x="0.0" y="111" width="288" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="crying" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQT-cr-QgJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="70.5" height="31"/>
@@ -128,7 +144,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="NSi-4Y-3Tm">
-                                                <rect key="frame" x="0.0" y="131" width="288" height="31"/>
+                                                <rect key="frame" x="0.0" y="147" width="288" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cow_moo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Du9-ju-Hhh">
                                                         <rect key="frame" x="0.0" y="0.0" width="70.5" height="31"/>
@@ -161,7 +177,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zgi-We-T3d">
-                                                <rect key="frame" x="0.0" y="167" width="288" height="31"/>
+                                                <rect key="frame" x="0.0" y="183" width="288" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgG-D6-N2q">
                                                         <rect key="frame" x="0.0" y="0.0" width="70.5" height="31"/>
@@ -194,7 +210,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="WI2-bO-hkN">
-                                                <rect key="frame" x="0.0" y="203" width="288" height="31"/>
+                                                <rect key="frame" x="0.0" y="219" width="288" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8B-0L-JVQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="70.5" height="31"/>
@@ -226,44 +242,44 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activation Threshold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpT-8c-3Py">
-                                        <rect key="frame" x="0.0" y="249.5" width="288" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="activation threshold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpT-8c-3Py">
+                                        <rect key="frame" x="0.0" y="266.5" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlL-qX-j2d">
-                                        <rect key="frame" x="0.0" y="285.5" width="288" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="303" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemYellowColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="10" maxValue="90" translatesAutoresizingMaskIntoConstraints="NO" id="xJr-UE-lbe">
-                                        <rect key="frame" x="-2" y="322" width="292" height="31"/>
+                                        <rect key="frame" x="-2" y="340" width="292" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemYellowColor"/>
                                         <connections>
-                                            <action selector="changedThreshold:" destination="BYZ-38-t0r" eventType="valueChanged" id="qi2-TN-de9"/>
+                                            <action selector="changedThreshold:" destination="BYZ-38-t0r" eventType="valueChanged" id="gJs-M5-UIM"/>
+                                            <action selector="sliderDone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOL-G4-NtA"/>
                                         </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bv3-Xy-9FV">
-                                        <rect key="frame" x="0.0" y="367.5" width="288" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="386.5" width="288" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Show log"/>
                                         <connections>
                                             <action selector="showLog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mP6-Eg-gjg"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No log yet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYT-iG-xud">
-                                        <rect key="frame" x="0.0" y="417.5" width="288" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYT-iG-xud">
+                                        <rect key="frame" x="0.0" y="437" width="288" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThH-44-wbg">
                                         <rect key="frame" x="0.0" y="453.5" width="288" height="34.5"/>
-                                        <color key="tintColor" systemColor="systemGrayColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Stop Sound"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Stop Sound" cornerStyle="capsule"/>
                                         <connections>
                                             <action selector="stopMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYS-fB-iLA"/>
                                         </connections>
@@ -304,9 +320,10 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.80000001192092896" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
