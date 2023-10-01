@@ -219,7 +219,7 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setActive(true)
             print("Session is Active")
             //try AVAudioSession.sharedInstance().setActive(false)
-            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker,.interruptSpokenAudioAndMixWithOthers, .allowAirPlay, .mixWithOthers])
+            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker,.allowBluetoothA2DP,.interruptSpokenAudioAndMixWithOthers, .allowAirPlay, .mixWithOthers])
             print("Playback OK")
 
         } catch {
