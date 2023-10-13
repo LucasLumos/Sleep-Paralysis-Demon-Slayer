@@ -203,11 +203,24 @@ class ViewController: UIViewController {
         // Create a new stream analyzer.
         streamAnalyzer = SNAudioStreamAnalyzer(format: inputFormat!)
         
-        let version1 = SNClassifierIdentifier.version1
+        
         do {
             // Start the stream of audio data.
-            request = try SNClassifySoundRequest(classifierIdentifier: version1)
-            try streamAnalyzer!.add(request!,
+            
+            //Previous sound classification stuff
+            //let version1 = SNClassifierIdentifier.version1
+            //request = try SNClassifySoundRequest(classifierIdentifier: version1)
+            
+            // Use a default model configuration.
+            let defaultConfig = MLModelConfiguration()
+
+            // Create an instance of the sound classifier's wrapper class.
+            let soundClassifier = try ParalysisSoundClassifier(configuration: defaultConfig)
+
+            // Create a classify sound request that uses the custom sound classifier.
+            let classifySoundRequest = try SNClassifySoundRequest(mlModel: soundClassifier.model)
+            
+            try streamAnalyzer!.add(classifySoundRequest,
                                    withObserver: resultsObserver)
         } catch {
             print("Unable to start sound  request: \(error.localizedDescription)")
@@ -270,6 +283,7 @@ class ViewController: UIViewController {
     
     @IBAction func stopMusic(_ sender: Any) {
         audioPlayer?.stop()
+
     }
     
     @IBAction func changedThreshold(_ sender: Any) {
@@ -539,9 +553,3 @@ class ResultsObserver: NSObject, SNResultsObserving {
         print("The request completed successfully!")
     }
 }
-
-
-
-
-
-

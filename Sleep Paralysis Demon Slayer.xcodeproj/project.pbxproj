@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A01713582AC536E600CA0D8E /* safe1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A01713572AC536E600CA0D8E /* safe1.m4a */; };
 		A017135C2AC54CE000CA0D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A017135B2AC54CE000CA0D8E /* Assets.xcassets */; };
+		A01C17032AD9A171005F6D74 /* ParalysisSoundClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A01C17022AD9A171005F6D74 /* ParalysisSoundClassifier.mlmodel */; };
 		A04ED6242AC1D688000F587E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04ED6232AC1D688000F587E /* AppDelegate.swift */; };
 		A04ED6262AC1D688000F587E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04ED6252AC1D688000F587E /* SceneDelegate.swift */; };
 		A04ED6282AC1D688000F587E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04ED6272AC1D688000F587E /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		A01713572AC536E600CA0D8E /* safe1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = safe1.m4a; sourceTree = "<group>"; };
 		A017135B2AC54CE000CA0D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A01C17022AD9A171005F6D74 /* ParalysisSoundClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ParalysisSoundClassifier.mlmodel; sourceTree = "<group>"; };
 		A04ED6202AC1D688000F587E /* Sleep Paralysis Demon Slayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Paralysis Demon Slayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04ED6232AC1D688000F587E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04ED6252AC1D688000F587E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				A017135B2AC54CE000CA0D8E /* Assets.xcassets */,
 				A04ED62E2AC1D689000F587E /* LaunchScreen.storyboard */,
 				A04ED6312AC1D689000F587E /* Info.plist */,
+				A01C17022AD9A171005F6D74 /* ParalysisSoundClassifier.mlmodel */,
 			);
 			path = "Sleep Paralysis Demon Slayer";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01C17032AD9A171005F6D74 /* ParalysisSoundClassifier.mlmodel in Sources */,
 				A04ED6282AC1D688000F587E /* ViewController.swift in Sources */,
 				A04ED6242AC1D688000F587E /* AppDelegate.swift in Sources */,
 				A04ED6262AC1D688000F587E /* SceneDelegate.swift in Sources */,
@@ -454,7 +458,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1;
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "lumos.Lucas.Sleep-Paralysis-Demon-Slayer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -483,7 +487,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1;
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "lumos.Lucas.Sleep-Paralysis-Demon-Slayer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
